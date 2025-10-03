@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png"
+      type="image/png"
+    />
+    <title>Dental Express - პროფესიონალური სტომატოლოგიური მოვლა</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- GSAP core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+  </head>
+
+  <body>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- position: fixed elements can go outside --->
+        <!-- Header -->
+        <header class="header">
+          <nav class="navbar">
+            <div class="nav-container">
+              <div class="nav-logo">
+                <i class="fas fa-tooth"></i>
+                <span>Dental Express</span>
+              </div>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link">მთავარი</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#services" class="nav-link">სერვისები</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#team" class="nav-link">ჩვენი გუნდი</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link">კონტაქტი</a>
+                </li>
+                <li class="nav-item">
+                  
+                </li>
+              </ul>
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+          <div class="hero-container">
+            <div class="hero-content">
+              <h1 class="hero-title">დაგვეგმე Dental Express-ში</h1>
+              <p class="hero-subtitle">
+                თქვენი ნდობილი პარტნიორი სრული სტომატოლოგიური მოვლისა და ლამაზი
+                ღიმილისთვის
+              </p>
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">დაგეგმვა</a>
+                <a href="#services" class="btn btn-secondary"
+                  >ჩვენი სერვისები</a
+                >
+              </div>
+            </div>
+            <div class="hero-image">
+              <i class="fas fa-tooth hero-icon"></i>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+          <div class="container">
+            <h2 class="section-title">ჩვენი სერვისები</h2>
+            <div class="services-grid">
+              <div class="service-card">
+                <i class="fas fa-tooth service-icon"></i>
+                <h3>საერთო სტომატოლოგია</h3>
+                <p>
+                  სრული სტომატოლოგიური მომსახურება - წმენდა, შეხორცება და
+                  პროფილაქტიკური მკურნალობები
+                </p>
+              </div>
+              <div class="service-card">
+                <i class="fas fa-smile service-icon"></i>
+                <h3>კოსმეტიკური სტომატოლოგია</h3>
+                <p>
+                  ფრჩხილების გათეთრება, ვენირები და ღიმილის მორგება ვიზუალის
+                  გასაუმჯობესებლად
+                </p>
+              </div>
+              <div class="service-card">
+                <i class="fas fa-user-md service-icon"></i>
+                <h3>ორთოდონტოლოგია</h3>
+                <p>
+                  ბრადკები და ხილული ალაინერები კბილების გასწორებისა და საცობის
+                  გასაუმჯობესებლად
+                </p>
+              </div>
+              <div class="service-card">
+                <i class="fas fa-tools service-icon"></i>
+                <h3>პეროალუროპერაცია</h3>
+                <p>
+                  კბილების ამოღება, იმპლანტები და სხვა ქირურგიული პროცედურები
+                </p>
+              </div>
+              <div class="service-card">
+                <i class="fas fa-child service-icon"></i>
+                <h3>პედიატრიული სტომატოლოგია</h3>
+                <p>
+                  სპეციალიზებული მომსახურება ბავშვებისთვის კომფორტულ და მეგობრულ
+                  გარემოში
+                </p>
+              </div>
+              <div class="service-card">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <h3>სასწრაფო დახმარება</h3>
+                <p>
+                  წყაროზე სწრაფი სტომატოლოგიური დახმარება გადაუდებელი
+                  შემთხვევებისთვის
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team">
+          <div class="container">
+            <h2 class="section-title">გაიცანით ჩვენი ექსპერტული გუნდი</h2>
+            <div class="team-grid">
+              <div class="team-member">
+                <div class="member-image">
+                  <i class="fas fa-user-md"></i>
+                </div>
+                <h3>დრ. სოფიკო</h3>
+                <p class="member-title">მთავარი სტომატოლოგი & დამფუძნებელი</p>
+                <p class="member-description">
+                  სპეციალიზდება საერთო სტომატოლოგიასა და კოსმეტიკურ
+                  პროცედურებში, 15+ წლის გამოცდილება
+                </p>
+              </div>
+              <div class="team-member">
+                <div class="member-image">
+                  <i class="fas fa-user-md"></i>
+                </div>
+                <h3>დრ. ხატუნა</h3>
+                <p class="member-title">ორთოდონტოლოგი</p>
+                <p class="member-description">
+                  მოწინავე სერთიფიკატით, სპეციალიზაცია ორთოდონტიულ მკურნალობებში
+                </p>
+              </div>
+              <div class="team-member">
+                <div class="member-image">
+                  <i class="fas fa-user-nurse"></i>
+                </div>
+                <h3>მაიკო</h3>
+                <p class="member-title">სტომატოლოგიური ჰიგიენისტი</p>
+                <p class="member-description">
+                  სანდო ჰიგიენისტი, ყურადღება პროფილაქტიკასა და პაციენტის
+                  განათლებაზე
+                </p>
+              </div>
+              <div class="team-member">
+                <div class="member-image">
+                  <i class="fas fa-user-md"></i>
+                </div>
+                <h3>დრ. ნინო</h3>
+                <p class="member-title">პედიატრიული სტომატოლოგი</p>
+                <p class="member-description">
+                  სპეციალიზებული ბავშვის სტომატოლოგიურ მომსახურებაში, სათუთი და
+                  მზრუნველი მიდგომა
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+          <div class="container">
+            <h2 class="section-title">დაგვიკავშირდით</h2>
+            <div class="contact-content">
+              <div class="contact-info">
+                <h3>დაკავშირება</h3>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>123 Dental Street, თბილისი, საქართველო</p>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <p>+995 32 123 4567</p>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <p>
+                    <a
+                      href="/cdn-cgi/l/email-protection"
+                      class="__cf_email__"
+                      data-cfemail="bdd4d3dbd2fdd9d8d3c9dcd1d8c5cdcfd8cece93dad8"
+                      >[email&#160;protected]</a
+                    >
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-clock"></i>
+                  <p>ორშ - პარ: 9:00 - 18:00<br />შაბათი: 9:00 - 14:00</p>
+                </div>
+              </div>
+              <div class="contact-form">
+                <h3>დაგეგმვა</h3>
+                <form id="appointmentForm">
+                  <input type="text" placeholder="სახელი და გვარი" required />
+                  <input type="email" placeholder="ელ. ფოსტა" required />
+                  <input type="tel" placeholder="ტელეფონის ნომერი" required />
+                  <select required>
+                    <option value="">აირჩიეთ სერვისი</option>
+                    <option value="general">საერთო სტომატოლოგია</option>
+                    <option value="cosmetic">კოსმეტიკური სტომატოლოგია</option>
+                    <option value="orthodontics">ორთოდონტოლოგია</option>
+                    <option value="surgery">პეროალუროპერაცია</option>
+                    <option value="pediatric">პედიატრიული სტომატოლოგია</option>
+                    <option value="emergency">სასწრაფო დახმარება</option>
+                  </select>
+                  <textarea
+                    placeholder="საკომენტარო ან სპეცით მოთხოვნა"
+                    rows="4"
+                  ></textarea>
+                  <button type="submit" class="btn btn-primary">
+                    დაგეგმვა
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-content">
+              <div class="footer-section">
+                <div class="footer-logo">
+                  <i class="fas fa-tooth"></i>
+                  <span>Dental Express</span>
+                </div>
+                <p>
+                  შეკვეთილი სტომატოლოგიური მომსახურება, კომფორტსა და ხარისხზე
+                  ორიენტაციით.
+                </p>
+              </div>
+              <div class="footer-section">
+                <h4>სწრაფი ლინკები</h4>
+                <ul>
+                  <li><a href="#home">მთავარი</a></li>
+                  <li><a href="#services">სერვისები</a></li>
+                  <li><a href="#team">ჩვენი გუნდი</a></li>
+                  <li><a href="#contact">კონტაქტი</a></li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h4>ჰყევით ჩვენ</h4>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2024 Dental Express. ყველა უფლება დაცულია.</p>
+            </div>
+          </div>
+        </footer>
+
+        <!-- Messenger Button -->
+        <div class="messenger-btn" id="messengerBtn">
+          <i class="fab fa-facebook-messenger"></i>
+        </div>
+
+       
+        <script src="./script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
