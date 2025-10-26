@@ -191,7 +191,7 @@ function openMessenger() {
 
 // რუკის ფუნქციონალობა
 function openDirections() {
-  const address = "რუსთაველის გამზირი 123, თბილისი, საქართველო";
+  const address = "ვარლამიშვილის ქუჩა 61-75 ქუთაისი, საქართველო";
   const encodedAddress = encodeURIComponent(address);
   const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
   window.open(mapsUrl, "_blank");

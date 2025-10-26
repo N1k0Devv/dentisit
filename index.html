@@ -379,7 +379,7 @@
                 <h3>საკონტაქტო ინფორმაცია</h3>
                 <div class="contact-item">
                   <i class="fas fa-map-marker-alt"></i>
-                  <p>რუსთაველის გამზირი 123, თბილისი, საქართველო</p>
+                  <p>ვარლამიშვილის ქუჩა 61-75, ქუთაისი, საქართველო</p>
                 </div>
                 <div class="contact-item">
                   <i class="fas fa-phone"></i>
@@ -396,34 +396,60 @@
                   <p>ორშაბათი - პარასკევი: 9:00 - 18:00<br />შაბათი: 9:00 - 14:00<br />კვირა: დახურულია</p>
                 </div>
               </div>
-              <div class="contact-form">
-                <h3>ვიზიტის დაჯავშნა</h3>
-                <form id="appointmentForm">
-                  <input type="text" placeholder="სახელი და გვარი" required />
-                  <input type="email" placeholder="ელექტრონული ფოსტა" required />
-                  <input type="tel" placeholder="ტელეფონის ნომერი" required />
-                  <select required>
-                    <option value="">აირჩიეთ სერვისი</option>
-                    <option value="general">საერთო სტომატოლოგია</option>
-                    <option value="cosmetic">კოსმეტიკური სტომატოლოგია</option>
-                    <option value="orthodontics">ორთოდონტია</option>
-                    <option value="surgery">პირის ღრუს ქირურგია</option>
-                    <option value="pediatric">ბავშვთა სტომატოლოგია</option>
-                    <option value="emergency">სასწრაფო დახმარება</option>
-                  </select>
-                  <textarea
-                    placeholder="დამატებითი კომენტარი ან სპეციალური მოთხოვნები"
-                    rows="4"
-                  ></textarea>
-                  <button type="submit" class="btn btn-primary">
-                    ვიზიტის დაჯავშნა
-                  </button>
-                </form>
-              </div>
-            </div>
+             <div class="contact-form">
+  <h3>ვიზიტის დაჯავშნა</h3>
+  <form id="appointmentForm">
+    <input type="text" name="name" placeholder="სახელი და გვარი" required />
+    <input type="email" name="email" placeholder="ელექტრონული ფოსტა" required />
+    <input type="tel" name="phone" placeholder="ტელეფონის ნომერი" required />
+    <select name="service" required>
+      <option value="">აირჩიეთ სერვისი</option>
+      <option value="general">საერთო სტომატოლოგია</option>
+      <option value="cosmetic">კოსმეტიკური სტომატოლოგია</option>
+      <option value="orthodontics">ორთოდონტია</option>
+      <option value="surgery">პირის ღრუს ქირურგია</option>
+      <option value="pediatric">ბავშვთა სტომატოლოგია</option>
+      <option value="emergency">სასწრაფო დახმარება</option>
+    </select>
+    <textarea name="comment" placeholder="დამატებითი კომენტარი ან სპეციალური მოთხოვნები" rows="4"></textarea>
+    <button type="submit" class="btn btn-primary">ვიზიტის დაჯავშნა</button>
+  </form>
+  <p id="formMessage" style="margin-top: 10px; font-weight: bold;"></p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init({
+      publicKey: "YOUR_PUBLIC_KEY" // replace with your EmailJS public key
+    });
+  })();
+
+  document.getElementById("appointmentForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const messageBox = document.getElementById("formMessage");
+
+    messageBox.style.color = "black";
+    messageBox.textContent = "იგზავნება... გთხოვთ მოითმინოთ.";
+
+    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form)
+      .then(() => {
+        messageBox.style.color = "green";
+        messageBox.textContent = "✅ თქვენი ვიზიტის მოთხოვნა წარმატებით გაიგზავნა!";
+        form.reset();
+      }, (error) => {
+        console.error(error);
+        messageBox.style.color = "red";
+        messageBox.textContent = "⚠️ შეცდომა გაგზავნისას. სცადეთ თავიდან ან დაგვიკავშირდით ტელეფონით.";
+      });
+  });
+</script>
+
           </div>
         </section>
-
+        
         <!-- Full Width Map Section -->
         <section class="map-section-full">
           <div class="map-header">
